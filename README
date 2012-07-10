@@ -1,0 +1,14 @@
+This is a very basic circul buffer driver. When you write() to it, it adds bytes
+to the buffer and when you read() from it, you read what's in the buffer and
+consme it.
+
+Writing example:
+# echo "Foo" > /dev/circchar
+
+Reading example:
+# cat /dev/circchar
+Foo
+
+--
+Karim Yaghmour
+karim.yaghmour@opersys.com
